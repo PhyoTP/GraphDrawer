@@ -61,4 +61,5 @@ while yneg >= -300:
     yneg-=30
 yn.goto(0,yneg)
 
+print("Done with graph")
 turtle.done()

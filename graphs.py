@@ -1,5 +1,5 @@
 import turtle
-
+print("Numbers must be less than ten")
 xp=turtle.Turtle()
 xpos=30
 while xpos <= 300:
@@ -62,4 +62,20 @@ while yneg >= -300:
 yn.goto(0,yneg)
 
 print("Done with graph")
-turtle.done()
+first_point = 0
+ptr = turtle.Turtle()
+while True:
+    pointx = float(input("Enter point x"))*30
+    pointy = float(input("Enter point y"))*30
+    if first_point == 0:
+        ptr.penup()
+    ptr.goto(pointx,pointy)
+    if first_point == 0:
+        ptr.pendown()
+        first_point += 1
+    cont = input("Type 'n' to continue")
+    if cont == 'n':
+        continue
+    else:
+        turtle.done()
+        break

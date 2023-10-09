@@ -73,9 +73,7 @@ while True:
     if first_point == 0:
         ptr.pendown()
         first_point += 1
-    cont = input("Type 'n' to continue and 's' to stop")
-    if cont == 'n':
-        continue
-    elif cont == 's':
+    cont = input("Type 's' to stop")
+    if cont == 's':
         turtle.done()
         break
